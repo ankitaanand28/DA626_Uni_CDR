@@ -62,7 +62,9 @@ train-recommendation-d1d2d3.ipynb
 train-recommendation-m1m2m3m4m5.ipynb
 ```
 
-For running Inference Code, just run the cells of these jupyter notebooks-
+Inference Code
+---
+For running Inference Code i.e. running trained models on test data, just run the cells of these jupyter notebooks-
 ```shell
 #dual-user-intra recommendation
 inference_dual_user_inter_recommendation.ipynb
