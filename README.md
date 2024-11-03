@@ -1,5 +1,18 @@
-# DA626_Uni_CDR
-
+# DA626  Team 21  "UniCDR"
+### Universal Cross Domain Recommendation
+1st Ankita Anand
+Roll-210150006
+Data Science and
+Artificial Intelligence
+<br>
+2nd Chhandam Pal
+Roll-210121020
+Engineering Physics
+<br>
+3rd Anjum Ulazim
+Roll-210121011
+Engineering Physics
+<br>
 UniCDR
 ===
 
