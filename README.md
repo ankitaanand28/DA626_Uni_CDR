@@ -40,33 +40,40 @@ To run this project, please make sure that you have the following packages and d
 Running example:
 
 ```shell
-# dual-user-intra
+# dual-user-intra recommendation
 CUDA_VISIBLE_DEVICES=0 python -u train_rec.py  --static_sample --cuda --domains sport_cloth --aggregator user_attention  > dual_user_intra_sport_cloth.log 2>&1&
 
-# dual-user-inter
+# dual-user-inter recommendation
 CUDA_VISIBLE_DEVICES=1 python -u train_rec.py  --static_sample --cuda --domains game_video --task dual-user-inter --aggregator mean > dual_item_inter_game_video.log 2>&1&
 
 
-# multi-item-intra
+# multi-item-intra recommendation
 CUDA_VISIBLE_DEVICES=2 python -u train_rec.py  --static_sample --cuda --domains m1_m2_m3_m4_m5 --task multi-item-intra --aggregator item_similarity > multi_item_intra.log 2>&1&
 
 
-# multi-user-intra
+# multi-user-intra recommendation
 CUDA_VISIBLE_DEVICES=3 python -u train_rec.py --static_sample --cuda --domains d1_d2_d3 --task multi-user-intra --aggregator mean > multi_user_intra.log 2>&1&
+```
+The below given notebooks were used for training  multi item intra recommendation and multi user intra recommendation.
+```shell
+# multi-user-intra recommendation
+train-recommendation-d1d2d3.ipynb
+# multi-item-intra recommendation
+train-recommendation-m1m2m3m4m5.ipynb
 ```
 
 For running Inference Code, just run the cells of these jupyter notebooks-
 ```shell
-#dual-user-intra
+#dual-user-intra recommendation
 inference_dual_user_inter_recommendation.ipynb
 
-# dual-user-inter
+# dual-user-inter recommendation
 inference_dual_user_intra_recommendation.ipynb
 
-# multi-item-intra
+# multi-item-intra recommendation
 inference_multi_item_intra_recommendation.ipynb
 
-# multi-user-intra
+# multi-user-intra recommendation
 inference_multi_user_intra_recommendation.ipynb
 
 ```
